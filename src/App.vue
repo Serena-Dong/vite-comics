@@ -12,6 +12,33 @@ import AppFooter from './components/AppFooter.vue';
   <AppFooter></AppFooter>
 </template>
 
-<style scoped>
+<style>
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 
+/* GENERICS */
+
+body {
+  font-family: sans-serif;
+  min-height: 100vh;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* UTILS */
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
 </style>
