@@ -8,8 +8,10 @@ export default {
 }
 </script>
 
-<template></template>
+<template>
 
-<style>
+</template>
+
+<style scope>
 
 </style>

@@ -5,7 +5,7 @@ import AppFooter from './components/AppFooter.vue';
 
 export default {
   name: 'Vite DC Comics',
-  components: { AppHeader }
+  components: { AppHeader, AppMain }
 }
 </script>
 
@@ -40,12 +40,13 @@ a {
 
 ul li {
   list-style: none;
+  margin: 1rem;
 }
 
 /* UTILS */
 
 .container {
-  max-width: 1200px;
+  width: 1200px;
   margin: 0 auto;
 }
 </style>

@@ -61,22 +61,24 @@ export default {
 
 <template>
     <header>
-        <figure>
-            <a href="">
-                <img src="../assets-vue-dc-comics-1/img/dc-logo.png" alt="">
-            </a>
-        </figure>
-        <nav>
-            <ul v-for="title in data" :key="title.text">
-                <li><a href="">{{ title.text }}</a></li>
+        <div class="container">
+            <figure>
+                <a href="">
+                    <img src="../assets-vue-dc-comics-1/img/dc-logo.png" alt="">
+                </a>
+            </figure>
+            <nav>
+                <ul v-for="title in data" :key="title.text">
+                    <li><a href="">{{ title.text }}</a></li>
 
-            </ul>
-        </nav>
+                </ul>
+            </nav>
+        </div>
     </header>
 </template>
 
-<style lang="scss">
-header {
+<style lang="scss" scoped>
+.container {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -89,7 +91,6 @@ header {
         flex-direction: row;
 
         li {
-            margin: 1rem;
             color: black;
 
             a {
