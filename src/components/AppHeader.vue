@@ -66,9 +66,42 @@ export default {
                 <img src="../assets-vue-dc-comics-1/img/dc-logo.png" alt="">
             </a>
         </figure>
+        <nav>
+            <ul v-for="title in data" :key="title.text">
+                <li><a href="">{{ title.text }}</a></li>
+
+            </ul>
+        </nav>
     </header>
 </template>
 
-<style>
+<style lang="scss">
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 
+    padding: 1rem;
+    background-color: white;
+
+    nav {
+        display: flex;
+        flex-direction: row;
+
+        li {
+            margin: 1rem;
+            color: black;
+
+            a {
+                color: black;
+
+                &:hover {
+                    color: blue;
+                    border-bottom: 5px solid blue;
+                    padding-bottom: 3.5rem;
+                }
+            }
+        }
+    }
+}
 </style>

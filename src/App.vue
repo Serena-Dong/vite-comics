@@ -1,9 +1,12 @@
-<script setup>
+<script>
 import AppHeader from './components/AppHeader.vue';
 import AppMain from './components/AppMain.vue';
 import AppFooter from './components/AppFooter.vue';
 
-
+export default {
+  name: 'Vite DC Comics',
+  components: { AppHeader }
+}
 </script>
 
 <template>
@@ -33,6 +36,10 @@ img {
 
 a {
   text-decoration: none;
+}
+
+ul li {
+  list-style: none;
 }
 
 /* UTILS */
