@@ -59,7 +59,15 @@ export default {
 }
 </script>
 
-<template></template>
+<template>
+    <header>
+        <figure>
+            <a href="">
+                <img src="../assets-vue-dc-comics-1/img/dc-logo.png" alt="">
+            </a>
+        </figure>
+    </header>
+</template>
 
 <style>
 
