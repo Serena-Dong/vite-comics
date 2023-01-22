@@ -78,8 +78,9 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+@use '../assets/scss/partials/_variables' as *;
+
 .container {
-    display: flex;
     justify-content: space-around;
     align-items: center;
 
@@ -97,8 +98,8 @@ export default {
                 color: black;
 
                 &:hover {
-                    color: blue;
-                    border-bottom: 5px solid blue;
+                    color: $dc_blue;
+                    border-bottom: 5px solid $dc_blue;
                     padding-bottom: 3.5rem;
                 }
             }

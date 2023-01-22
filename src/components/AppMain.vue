@@ -30,6 +30,8 @@ export default {
 </template>
 
 <style lang="scss" scope>
+@use '../assets/scss/partials/_variables' as *;
+
 main {
 
     color: white;
@@ -44,11 +46,11 @@ main {
     }
 
     nav {
-        background-color: #0d7bec;
+        background-color: $dc_blue;
 
-        ul {
+        ul,
+        .container {
             display: flex;
-            flex-direction: row;
             align-items: center;
             justify-content: space-around;
 

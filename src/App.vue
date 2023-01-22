@@ -48,5 +48,8 @@ ul li {
 .container {
   width: 1200px;
   margin: 0 auto;
+
+  display: flex;
+
 }
 </style>

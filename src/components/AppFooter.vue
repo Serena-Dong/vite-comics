@@ -46,7 +46,7 @@ export default {
                         </ul>
                     </div>
                     <div class="footer-col">
-                        <h2>DC SITES</h2>
+                        <h2>SITES</h2>
                         <ul>
                             <li><a href="">Characters</a></li>
                             <li><a href="">Characters</a></li>
@@ -88,6 +88,8 @@ export default {
 </template>
 
 <style lang="scss" scope>
+@use '../assets/scss/partials/_variables' as *;
+
 footer {
     h2 {
         color: white;
@@ -109,11 +111,6 @@ footer {
         background-image: url('../assets-vue-dc-comics-1/img/footer-bg.jpg');
         height: 480px;
 
-        .container {
-            display: flex;
-            justify-content: space-between;
-        }
-
         .footer-nav {
             padding: 2rem 0 2rem;
             display: flex;
@@ -133,6 +130,11 @@ footer {
 
         }
 
+        .container {
+            justify-content: space-between;
+        }
+
+
         figure img {
             height: 85%
         }
@@ -147,14 +149,13 @@ footer {
         background-color: rgb(45, 45, 45);
 
         .container {
-            display: flex;
             justify-content: space-between;
             align-items: center;
         }
 
         .footer-sign {
             h2 {
-                border: 2px solid blue;
+                border: 2px solid $dc_blue;
                 padding: 1rem;
             }
         }
@@ -168,7 +169,7 @@ footer {
                     margin: 1rem;
 
                     h2 {
-                        color: blue;
+                        color: $dc_blue;
                     }
                 }
             }
