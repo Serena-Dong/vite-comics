@@ -1,6 +1,9 @@
 <script>
 export default {
-    name: 'AppContents'
+    name: 'AppContents',
+    props: {
+        content: Object
+    }
 }
 </script>
 
@@ -8,9 +11,9 @@ export default {
 
     <div class="card">
         <a href="">
-            <img src="{{ }}" alt="">
+            <img src={{ content.thumb }} alt={{ content.type}}>
 
-            <p>Action Comics</p>
+            <p>{{ content.series }}</p>
         </a>
     </div>
 

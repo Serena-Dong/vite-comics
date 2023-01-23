@@ -1,11 +1,10 @@
 <script>
 import AppContents from './contents/AppContents.vue'
 export default {
-    data() {
-        return {
-        }
-    },
-    components: { AppContents }
+    components: { AppContents },
+    props: {
+        contents: Array
+    }
 }
 </script>
 
@@ -16,7 +15,7 @@ export default {
             <div class="container">
                 <div class="row">
 
-                    <AppContents></AppContents>
+                    <AppContents v-for="content in contents" :key="content.series" :contents="content"></AppContents>
 
                 </div>
             </div>
@@ -43,6 +42,8 @@ export default {
 main {
 
     color: white;
+
+
 
     .contents {
         background-color: rgb(41, 41, 41);
@@ -75,6 +76,10 @@ main {
 
             height: 180px;
 
+            a {
+                color: white;
+
+            }
         }
 
     }
