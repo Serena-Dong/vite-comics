@@ -1,5 +1,5 @@
 <script>
-import AppContents from './AppContents.vue'
+import AppContents from './contents/AppContents.vue'
 export default {
     data() {
         return {
