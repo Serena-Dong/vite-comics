@@ -3,7 +3,6 @@ import AppContents from './contents/AppContents.vue'
 export default {
     data() {
         return {
-
         }
     },
     components: { AppContents }
