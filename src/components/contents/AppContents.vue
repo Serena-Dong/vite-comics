@@ -11,7 +11,7 @@ export default {
 
     <div class="card">
         <a href="">
-            <img src={{ content.thumb }} alt={{ content.type}}>
+            <img :src="content.thumb" :alt="content.type">
 
             <p>{{ content.series }}</p>
         </a>

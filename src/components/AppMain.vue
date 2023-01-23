@@ -15,7 +15,7 @@ export default {
             <div class="container">
                 <div class="row">
 
-                    <AppContents v-for="content in contents" :key="content.series" :contents="content"></AppContents>
+                    <AppContents v-for="content in contents" :key="content.series" :content="content"></AppContents>
 
                 </div>
             </div>
