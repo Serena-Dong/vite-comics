@@ -10,11 +10,7 @@ export default {
 
 <template>
     <main>
-        <div class="contents">
-            <div class="container">
-                <h1>Contents goes here</h1>
-            </div>
-        </div>
+
         <nav>
             <div class="container">
                 <ul>
@@ -29,20 +25,19 @@ export default {
     </main>
 </template>
 
-<style lang="scss" scope>
+<style lang="scss" scoped>
 @use '../assets/scss/partials/_variables' as *;
 
 main {
 
     color: white;
 
-    .contents {
-        background-color: rgb(41, 41, 41);
-        height: 150px;
+    a {
+        color: white;
 
-        display: flex;
-        align-items: center;
-
+        &:hover {
+            color: $dc_blue;
+        }
     }
 
     nav {
@@ -56,9 +51,6 @@ main {
 
             height: 180px;
 
-            a {
-                color: white;
-            }
         }
 
     }
