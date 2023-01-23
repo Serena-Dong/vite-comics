@@ -5,6 +5,7 @@ import AppFooter from './components/AppFooter.vue';
 
 export default {
   name: 'Vite DC Comics',
+  components: { AppHeader, AppMain, AppFooter },
   data() {
     return {
       contents: [
@@ -94,8 +95,8 @@ export default {
         },
       ]
     }
-  },
-  components: { AppHeader, AppMain, AppFooter }
+  }
+
 }
 </script>
 
