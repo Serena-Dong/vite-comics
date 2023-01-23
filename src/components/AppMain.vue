@@ -13,7 +13,16 @@ export default {
 <template>
     <main>
 
-        <AppContents></AppContents>
+        <div class="contents">
+            <div class="container">
+                <div class="row">
+
+                    <AppContents></AppContents>
+
+                </div>
+            </div>
+        </div>
+
 
         <nav>
             <div class="container">
@@ -36,6 +45,25 @@ main {
 
     color: white;
 
+    .contents {
+        background-color: rgb(41, 41, 41);
+        min-height: 150px;
+        padding: 3rem;
+
+        display: flex;
+        align-items: center;
+
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2%;
+
+        }
+
+
+
+    }
 
     nav {
         background-color: $dc_blue;
