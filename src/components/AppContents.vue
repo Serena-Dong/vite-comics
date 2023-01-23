@@ -29,6 +29,14 @@ export default {
 <style lang="scss" scoped>
 @use '../assets/scss/partials/_variables' as *;
 
+a {
+    color: white;
+
+    &:hover {
+        color: $dc_blue;
+    }
+}
+
 .contents {
     background-color: rgb(41, 41, 41);
     min-height: 150px;
@@ -36,6 +44,7 @@ export default {
 
     display: flex;
     align-items: center;
+
 
     .row {
         display: flex;

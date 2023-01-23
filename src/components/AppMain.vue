@@ -1,15 +1,19 @@
 <script>
+import AppContents from './AppContents.vue'
 export default {
     data() {
         return {
 
         }
-    }
+    },
+    components: { AppContents }
 }
 </script>
 
 <template>
     <main>
+
+        <AppContents></AppContents>
 
         <nav>
             <div class="container">
@@ -32,13 +36,6 @@ main {
 
     color: white;
 
-    a {
-        color: white;
-
-        &:hover {
-            color: $dc_blue;
-        }
-    }
 
     nav {
         background-color: $dc_blue;
